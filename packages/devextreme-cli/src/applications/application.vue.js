@@ -32,7 +32,7 @@ const preparePackageJsonForTemplate = (appPath, appName) => {
 };
 
 async function createVueApp(name) {
-    return runCommand('npx', ['-p', '@vue/cli', 'vue', 'create', name, '--default', '--packageManager=npm']);
+    return runCommand('npx', ['-p', '@vue/cli', 'vue', 'create', name, '--default']);
 }
 
 const create = (appName, options) => {
