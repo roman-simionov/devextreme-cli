@@ -42,7 +42,7 @@ const updateJsonPropName = (path, name) => {
 };
 
 const create = (appName, options) => {
-    const commandArguments = ['create-react-app', appName];
+    const commandArguments = ['create-react-app', appName, '--useNpm=true'];
 
     getLayoutInfo(options.layout).then((layoutInfo) => {
         runCommand('npx', commandArguments).then(() => {
